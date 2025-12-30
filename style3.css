@@ -1,0 +1,84 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Base */
+body {
+  background: black;
+  color: white;
+}
+
+/* Page container */
+.cv-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Main title */
+.cv-page h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+
+/* Sections */
+.cv-section {
+  margin-bottom: 30px;
+}
+
+/* Section titles */
+.cv-section h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.cv-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Lists */
+.cv-section ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.cv-section li {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+/* Links */
+.cv-section a {
+  color: white;
+  text-decoration: underline;
+}
+
+.cv-section a:hover {
+  color: lightgray;
+}
+
+@media (max-width: 768px) {
+  .cv-page h1 {
+    font-size: 28px;
+  }
+
+  .cv-section h2 {
+    font-size: 20px;
+  }
+
+  .cv-section p,
+  .cv-section li {
+    font-size: 14px;
+  }
+}

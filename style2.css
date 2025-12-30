@@ -1,0 +1,115 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+/* Main container */
+.cv-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Name */
+.cv-page h1 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+/* Sections */
+.cv-page > div {
+  margin-bottom: 40px;
+}
+
+/* Titles + icon/photo */
+.cv-page h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.cv-page h2 img {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cv-profile img{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+.education-images{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+.education-images img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Text */
+.cv-page p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  font-style: italic;
+}
+
+/* Languages list */
+.cv-page ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-page li {
+  font-size: 17px;
+  margin-bottom: 6px;
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .cv-page h1 {
+    font-size: 32px;
+  }
+
+  .cv-page h2 {
+    font-size: 22px;
+  }
+
+  .cv-page p {
+    font-size: 16px;
+  }
+  .education-images{
+    flex-direction: column;
+  }
+  .education-images img{
+    height: 150px;
+    width: 200px;
+  }
+}
